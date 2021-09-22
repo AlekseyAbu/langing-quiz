@@ -32,6 +32,7 @@
                 <span class="left-try__text">Да, хочу</span>
                 <img class="content__left-try-img" src="@/assets/strelka.svg" alt="strelka">
             </button>
+            <a class="content__link-help" :class="{content__link_help_active: counter === 2 }">Нет, мне нужна помощь</a>
         </div>
     </div>
     <img class="header__img" src="@/assets/image1.png" alt="#">
@@ -140,9 +141,24 @@ export default {
     cursor: pointer;
     transition: 500ms ease-out;
 }
-.content__left-try:hover{
-    cursor: pointer;
-    opacity: .5;
+.content__link-help{
+    display: none;
+    padding: 23px 93px 24px 50px;
+    border: 2.5px solid #4A67FF;
+    box-sizing: border-box;
+    border-radius: 50px;
+    max-width: 260px;
+    font-family: 'SF Pro Display';
+    font-style: normal;
+    font-weight: 600;
+    font-size: 18px;
+    line-height: 135%;
+    color: #4A67FF;
+    margin-top: 25px;
+}
+.content__link_help_active{
+    transition: 500ms ease-out;
+    display: inline-block;
 }
 .left-try__text {
     font-family: 'SF Pro Display', sans-serif;
@@ -222,6 +238,11 @@ export default {
 
 @media (min-width: 1220px) {
     .content__left-try:hover {
+        cursor: pointer;
+        opacity: .5;
+        transition: 10ms ease-in-out;
+    }
+    .content__link-help{
         cursor: pointer;
         opacity: .5;
         transition: 10ms ease-in-out;

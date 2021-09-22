@@ -32,6 +32,7 @@
                 <p class="left-try__text">Да, хочу</p>
                 <img class="content__left-try-img" src="@/assets/strelka.svg" alt="strelka">
             </button>
+            <a class="content__link-help" :class="{content__link_help_active: counter === 2 }">Нет, мне нужна помощь</a>
         </div>
         <img class="header__img" src="@/assets/image-1-mobail.png" alt="#">
     </div>
@@ -135,6 +136,25 @@ export default {
     margin-top: 120px;
     border: none;
 }
+.content__link-help{
+    display: none;
+    padding: 17px 35px 18px;
+    border: 2.5px solid #4A67FF;
+    box-sizing: border-box;
+    border-radius: 50px;
+    text-decoration: none;
+    font-family: SF Pro Display;
+    font-style: normal;
+    font-weight: 600;
+    font-size: 18px;
+    line-height: 135%;
+    color: #4A67FF;
+    margin-top: 20px;
+}
+.content__link_help_active{
+    transition: 500ms ease-out;
+    display: inline-block;
+}
 .content__left-try-img{
     position: absolute;
     top: 18px;
@@ -157,10 +177,6 @@ export default {
     background: rgba(0, 0, 0, 0.8);
     backdrop-filter: blur(20px);
     opacity: .2;
-}
-.content__left-try:hover {
-    cursor: pointer;
-    opacity: .5;
 }
 .block{
     display: none;
