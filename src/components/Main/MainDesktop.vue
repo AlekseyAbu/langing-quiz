@@ -147,7 +147,6 @@ export default {
     border: 2.5px solid #4A67FF;
     box-sizing: border-box;
     border-radius: 50px;
-    max-width: 260px;
     font-family: 'SF Pro Display';
     font-style: normal;
     font-weight: 600;
