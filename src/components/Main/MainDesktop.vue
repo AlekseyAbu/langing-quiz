@@ -88,7 +88,7 @@ export default {
 }
 .content__left {
     max-width: 613px;
-    z-index: 2;
+    z-index: 5;
     position: relative;
 }
 .content__left-title {
