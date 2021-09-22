@@ -63,6 +63,7 @@ export default {
     padding: 45px 32px 50px;
     box-sizing: border-box;
     overflow: hidden;
+    height: 812px;
 }
 .logo {
     z-index: 5;

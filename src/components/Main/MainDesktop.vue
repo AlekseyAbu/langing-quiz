@@ -88,6 +88,7 @@ export default {
 .content__left {
     max-width: 613px;
     z-index: 2;
+    position: relative;
 }
 .content__left-title {
     font-family: 'Gilroy', sans-serif;
